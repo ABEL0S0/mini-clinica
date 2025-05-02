@@ -11,10 +11,6 @@ dist/
 web-build/
 .expo-shared/
 
-# --- SQLite DB ---
-*.sqlite
-*.sqlite-journal
-
 # --- VSCode ---
 .vscode/
 
