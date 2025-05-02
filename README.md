@@ -18,7 +18,6 @@ Este es un proyecto de gestión de citas médicas desarrollado con las siguiente
 - TypeScript
 - SQLite
 - Express Validator
-- UUID
 
 ## Estructura del Proyecto
 
