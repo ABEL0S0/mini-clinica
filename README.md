@@ -61,11 +61,11 @@ npm install
 npm start
 ```
 Accede al backend desde:
-[www.localhost:3000](http://localhost:3000/)
+[http://localhost:3000](http://localhost:3000/)
 
 ### Frontend
 ```bash
 npm run dev
 ```
 Accede al Frontend desde:
-[www.localhost:8081](http://localhost:8081/)
+[http://localhost:8081](http://localhost:8081/)
