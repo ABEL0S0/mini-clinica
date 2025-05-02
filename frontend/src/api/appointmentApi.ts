@@ -3,7 +3,8 @@ import { Appointment } from '../types/Appointment';
 import Constants from 'expo-constants';
 
 const api = axios.create({
-  baseURL: Constants.expoConfig?.extra?.apiUrl || 'http://localhost:3000',
+  //baseURL: Constants.expoConfig?.extra?.apiUrl || 'http://localhost:3000',
+  baseURL: 'https://mini-clinica.onrender.com',
 });
 
 export const getAppointments = async (): Promise<Appointment[]> => {
