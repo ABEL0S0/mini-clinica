@@ -1,71 +1,83 @@
 # Mini Clínica - Proyecto
 
-Este es un proyecto de gestión de citas médicas desarrollado con React Native (para el frontend) y Node.js (para el backend).
+Este es un proyecto de gestión de citas médicas desarrollado con las siguientes tecnologías:
 
-## Requisitos previos
+## Tecnologías Utilizadas
 
-Asegúrate de tener los siguientes programas instalados:
+### Frontend
+- React Native con soporte para Web (React Native Web)
+- Expo
+- TypeScript
+- React Navigation
+- Axios
+- Date-fns
 
-- [Node.js](https://nodejs.org/) (versión 14 o superior)
-- [Expo CLI](https://docs.expo.dev/get-started/installation/) (para el frontend)
-- [Git](https://git-scm.com/)
+### Backend
+- Node.js
+- Express
+- TypeScript
+- SQLite
+- Express Validator
+- UUID
 
 ## Estructura del Proyecto
 
-El proyecto está dividido en dos carpetas principales:
+- `frontend/` - Contiene la aplicación del cliente en React Native Web.
+- `backend/` - Contiene el servidor y la API REST.
 
-- `frontend/` - Contiene el código de la aplicación React Native con soporte para la web.
-- `backend/` - Contiene el código del servidor backend en Node.js.
+## Endpoints del Backend
 
-## Instrucciones para correr el proyecto
+- `POST /appointments` - Crear una nueva cita médica.
+- `GET /appointments` - Listar todas las citas médicas.
+- `GET /appointments/:id` - Obtener una cita médica por ID.
+- `PUT /appointments/:id` - Actualizar una cita médica por ID.
+- `DELETE /appointments/:id` - Eliminar una cita médica.
 
-### 1. Clona el repositorio
+## Instalación del Proyecto
 
-Primero, clona el repositorio en tu máquina local:
+### Clonar el repositorio
 
 ```bash
 git clone https://github.com/ABEL0S0/mini-clinica.git
 cd mini-clinica
 ```
 
-## Intalacion de dependencia
+### Instalación de dependencias
 
-En este repositorio el backend y el frontend estan incluidos
-
-### Backend
-Navega a la carpeta backend/:
+#### Backend
 
 ```bash
 cd backend
-```
-Instala las dependencias:
-
-```bash
 npm install
 ```
+
+#### Frontend
+
+```bash
+cd ../frontend
+npm install
+```
+
+## Scripts disponibles
+
 ### Frontend
 
 ```bash
-cd frontend
+npm run dev       # Iniciar en modo desarrollo web
+npm run build     # Generar build para producción web
+npm start         # Alias de dev
 ```
-Instala las dependencias:
-
-```bash
-npm install
-```
-
-## Correr el Backend y el Frontend
+Accede al Frontend desde:
+[http://localhost:8081](http://localhost:8081/)
 
 ### Backend
+
 ```bash
-npm start
+npm start         # Iniciar servidor backend
 ```
 Accede al backend desde:
 [http://localhost:3000](http://localhost:3000/)
 
-### Frontend
-```bash
-npm run dev
-```
-Accede al Frontend desde:
-[http://localhost:8081](http://localhost:8081/)
+## Autor
+
+Proyecto Mini Clínica – Gestión de Citas Médicas
