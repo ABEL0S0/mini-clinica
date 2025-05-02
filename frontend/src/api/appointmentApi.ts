@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { Appointment } from '../types/Appointment';
+import Constants from 'expo-constants';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000', // Cambia esto según tu red
+  baseURL: Constants.expoConfig?.extra?.apiUrl || 'http://localhost:3000',
 });
 
 export const getAppointments = async (): Promise<Appointment[]> => {
@@ -28,5 +29,3 @@ export const updateAppointment = async (id: number, data: Partial<Appointment>) 
 export const deleteAppointment = async (id: number) => {
   await api.delete(`/appointments/${id}`);
 };
-
-

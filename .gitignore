@@ -11,12 +11,12 @@ dist/
 web-build/
 .expo-shared/
 
+# --- Environment Variables ---
+.env
+.env.*
+
 # --- VSCode ---
 .vscode/
-
-# --- Environment files ---
-.env
-.env.*.local
 
 # --- Build Artifacts ---
 *.tsbuildinfo
